@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact – Income Equality Initiative</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-12ckpQv4DFAudTgf/LjIYE26gQFPjhm4+nIsScftKK0fsWyfWa9/q7FsBoKo5wxrMyhpJxLKaJI3dUZY8vMXtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <a href="index.html" class="logo">Income Equality Initiative</a>
+        <nav>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="blog.html">Blog</a>
+            <a href="shop.html">Shop</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact.html" class="active">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="hero" style="min-height:40vh;">
+      <img src="images/hero.png" alt="Contact hero" />
+      <div class="hero-content">
+        <h1>Get in Touch</h1>
+        <p>
+          We’d love to hear from you. Reach out with questions, ideas, or to
+          volunteer.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          Fill out the form below, and we’ll get back to you as soon as
+          possible.
+        </p>
+        <form
+          action="https://formspree.io/f/your-contact-form-id"
+          method="POST"
+          style="max-width:600px;margin:0 auto;text-align:left;"
+        >
+          <label for="fullname" style="display:block;margin-bottom:0.5rem;">Full Name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="name"
+            required
+            style="width:100%;padding:0.5rem;margin-bottom:1rem;border:1px solid #ccc;border-radius:4px;"
+          />
+          <label for="email" style="display:block;margin-bottom:0.5rem;">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            style="width:100%;padding:0.5rem;margin-bottom:1rem;border:1px solid #ccc;border-radius:4px;"
+          />
+          <label for="subject" style="display:block;margin-bottom:0.5rem;">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            style="width:100%;padding:0.5rem;margin-bottom:1rem;border:1px solid #ccc;border-radius:4px;"
+          />
+          <label for="message" style="display:block;margin-bottom:0.5rem;">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            style="width:100%;padding:0.5rem;margin-bottom:1rem;border:1px solid #ccc;border-radius:4px;resize:vertical;"
+          ></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <p style="margin-top:1rem;font-size:0.9rem;color:#999;">
+          This contact form uses Formspree as a backend. Submissions are
+          validated, stored, and emailed automatically【132179234244752†L32-L36】【132179234244752†L96-L108】. Replace
+          <code>your-contact-form-id</code> with your Formspree form ID.
+        </p>
+        <div style="margin-top:2rem;text-align:center;">
+          <h3 style="color:#d63031;">Other Ways to Reach Us</h3>
+          <p>Email: <a href="mailto:info@example.org">info@example.org</a></p>
+          <p>Mailing Address: 123 Equality Street, Denver, CO 80202</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>
+          &copy; <span id="current-year"></span> Income Equality Initiative. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>

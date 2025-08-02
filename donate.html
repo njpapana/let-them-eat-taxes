@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate – Income Equality Initiative</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-12ckpQv4DFAudTgf/LjIYE26gQFPjhm4+nIsScftKK0fsWyfWa9/q7FsBoKo5wxrMyhpJxLKaJI3dUZY8vMXtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <a href="index.html" class="logo">Income Equality Initiative</a>
+        <nav>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="blog.html">Blog</a>
+            <a href="shop.html">Shop</a>
+            <a href="donate.html" class="active">Donate</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+    <!-- Donate Hero -->
+    <section class="hero" style="min-height:40vh;">
+      <img src="images/inequality.png" alt="Donate hero" />
+      <div class="hero-content">
+        <h1>Support Our Work</h1>
+        <p>
+          Your contribution fuels our mission to promote income equality and
+          defend labor rights. Thank you for standing with us.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Make a Donation</h2>
+        <p>
+          We are a registered non‑profit organization. Donations are tax‑deductible
+          to the fullest extent permitted by law. Choose a fixed amount or enter
+          your own contribution.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;margin-top:2rem;">
+          <div style="background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.05);">
+            <h3 style="margin-bottom:1rem;color:#d63031;">Custom Donation</h3>
+            <!-- PayPal Donate button (custom amount) -->
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+              <!-- Identify your nonprofit so payments go to your account -->
+              <input type="hidden" name="business" value="your-paypal-email@example.com" />
+              <!-- Describe the donation -->
+              <input type="hidden" name="item_name" value="General Fund Donation" />
+              <input type="hidden" name="currency_code" value="USD" />
+              <!-- Display the button -->
+              <input
+                type="image"
+                name="submit"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                alt="Donate with PayPal button"
+              />
+              <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+            </form>
+            <p style="font-size:0.85rem;color:#777;margin-top:0.5rem;">
+              Donors will be taken to PayPal to enter their own amount. The sample
+              PayPal donation form above uses hidden fields to identify your
+              organization and specify the currency【425400358104038†L120-L134】.
+            </p>
+          </div>
+          <div style="background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.05);">
+            <h3 style="margin-bottom:1rem;color:#d63031;">$25 Donation</h3>
+            <!-- Fixed amount donation -->
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="business" value="your-paypal-email@example.com" />
+              <input type="hidden" name="item_name" value="Support our mission" />
+              <input type="hidden" name="currency_code" value="USD" />
+              <input type="hidden" name="amount" value="25.00" />
+              <input
+                type="image"
+                name="submit"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+                alt="Donate $25 with PayPal button"
+              />
+              <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+            </form>
+            <p style="font-size:0.85rem;color:#777;margin-top:0.5rem;">
+              This button sets a fixed contribution amount by using an
+              <code>amount</code> field as shown in PayPal’s sample HTML code【425400358104038†L120-L132】【425400358104038†L150-L166】.
+            </p>
+          </div>
+          <div style="background:#fff;padding:1.5rem;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.05);">
+            <h3 style="margin-bottom:1rem;color:#d63031;">Monthly $10</h3>
+            <!-- Monthly recurring donation through PayPal subscription -->
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_xclick-subscriptions" />
+              <input type="hidden" name="business" value="your-paypal-email@example.com" />
+              <input type="hidden" name="item_name" value="Monthly Support" />
+              <input type="hidden" name="currency_code" value="USD" />
+              <input type="hidden" name="a3" value="10.00" />
+              <input type="hidden" name="p3" value="1" />
+              <input type="hidden" name="t3" value="M" />
+              <input type="hidden" name="src" value="1" />
+              <input type="hidden" name="sra" value="1" />
+              <input
+                type="image"
+                name="submit"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif"
+                alt="Subscribe"
+              />
+              <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+            </form>
+            <p style="font-size:0.85rem;color:#777;margin-top:0.5rem;">
+              You can also set up recurring monthly support using PayPal’s
+              subscription functionality. Feel free to adjust the amount and
+              term values.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-content">
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>
+          &copy; <span id="current-year"></span> Income Equality Initiative. All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
